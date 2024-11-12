@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home-header {
+  font-weight: bold;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    overflow: hidden;
+    object-position: center;
+}
+
+/************ Default Css ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button, input, textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+@media (min-width:1700px) {
+        main .container {
+                max-width: 100%;
+                padding: 0 150px;
+        }
+}
+
+p.success {
+        color: green;
+}
+
+p.danger {
+        color: red;
+}
+
+
+
+
