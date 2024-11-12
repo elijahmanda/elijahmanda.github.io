@@ -6,7 +6,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
-import { motion, useMotionTemplate, useMotionValue, animate } from 'framer-motion';
+import { useMotionTemplate, useMotionValue, animate } from 'framer-motion';
 import { Stars } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 
