@@ -6,7 +6,7 @@ const getProjects = () => {
   return [
     { 
       title: 'Symbolic Engine', 
-      description: 'An advanced computational engine that supports math, science, and other domains, designed to work with a custom programming language, Symbolic.',
+      description: 'An advanced computational engine that supports math, science, and other domains, designed to work with a custom programming language, Symbolic. (Currently in private repo)',
       github: "https://github.com/elijahmanda/symbolic",
       imageUrl: symbolicLogo
     }
