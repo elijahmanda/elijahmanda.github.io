@@ -15,13 +15,11 @@ function Home({ color }: { color: any }) {
       >
         <Row>
           <Col>
-            <motion.h1 
-              initial={{ x: -100 }} 
-              animate={{ x: 0 }} 
-              transition={{ duration: 0.5 }} 
-              className="display-4 home-header"
-            >
-              I'm a <Typewriter
+            <div className="">
+            <h1 className="display-4 home-header">Hello I'm Elijah Manda</h1>
+            <br />
+            <h1 className="display-6">
+            <Typewriter
                 options={{
                   strings: ['Developer', 'Problem Solver'],
                   autoStart: true,
@@ -29,7 +27,9 @@ function Home({ color }: { color: any }) {
                   delay: 75,
                 }}
               />
-            </motion.h1>
+            </h1>
+            </div>
+            <br />
             <p className="lead">
               I specialize in building intelligent systems like Symbolic, automation solutions, and AI assistants.
               With expertise in Python, C++, Rust, JavaScript, and web technologies, I create solutions that bridge math, science, and technology.

@@ -13,8 +13,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/material": "^6.1.6",
     "@react-three/drei": "^9.115.0",
     "@react-three/fiber": "^8.17.10",
     "bootstrap": "^5.3.3",

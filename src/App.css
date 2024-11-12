@@ -1,3 +1,6 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,7 +27,7 @@ html, body {
   scroll-padding-top: 75px;
   overflow-x: hidden;
   position: relative;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', 'Roboto', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -34,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
-  font-family: 'Merriweather', serif;
+  font-family: 'Poppins', 'Roboto', serif;
   font-weight: 700;
 }
 
@@ -55,7 +58,8 @@ a:hover {
 }
 
 button, input, textarea {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+
 }
 
 button {
@@ -82,6 +86,35 @@ p.danger {
         color: red;
 }
 
+/* Add styles for the navbar */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar.transparent {
+  background-color: transparent; /* Initially transparent */
+}
+
+.navbar.scrolled {
+  background-color: #333; /* Change color when scrolled */
+}
+
+/* Apply fancy font to JCEM */
+.brand {
+  font-family: 'Cursive', sans-serif; /* You can replace 'Cursive' with your desired fancy font */
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; /* Text color */
+}
+
+/* Ensure the navbar is visible on scroll */
+.navbar-dark .navbar-nav .nav-link {
+  color: white; /* Nav text color */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f0f0f0; /* Hover effect */
+}
 
 
 

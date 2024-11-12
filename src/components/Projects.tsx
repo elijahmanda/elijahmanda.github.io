@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
-
+import symbolicLogo from '../assets/symbolicLogo.webp';
 
 const getProjects = () => {
   return [
     { 
       title: 'Symbolic Engine', 
       description: 'An advanced computational engine that supports math, science, and other domains, designed to work with a custom programming language, Symbolic.',
-      github: "https://github.com/elijahmanda/symbolic"
+      github: "https://github.com/elijahmanda/symbolic",
+      imageUrl: symbolicLogo
     }
   ];
 };

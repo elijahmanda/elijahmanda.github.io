@@ -3,6 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 
 function NavBar() {
   const [expanded, setExpanded] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const navbarRef = useRef<HTMLElement>(null);
 
   // Function to close the navbar if clicked outside
@@ -13,23 +14,36 @@ function NavBar() {
   };
 
   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
     document.addEventListener("mousedown", handleClickOutside);
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("scroll", handleScroll); // Cleanup scroll listener
     };
   }, []);
 
   return (
     <Navbar
       expand="lg"
-      className="bg-body-tertiary"
+      className={`navbar ${scrolled ? "scrolled" : "transparent"}`} // Toggle class based on scroll position
       data-bs-theme="dark"
       fixed="top"
       expanded={expanded}
       ref={navbarRef}
     >
       <Container fluid>
-        <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
+        <Navbar.Brand href="#home" className="brand">
+          JCEM
+        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="navbarScroll"
           onClick={() => setExpanded(expanded ? false : true)}

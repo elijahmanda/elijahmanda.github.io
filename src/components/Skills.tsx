@@ -2,16 +2,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faPython, faJs, faNodeJs, faRust } from "@fortawesome/free-brands-svg-icons";
 import { faCuttlefish } from "@fortawesome/free-brands-svg-icons"; // for C and C++
 import { motion } from 'framer-motion';
-
+import ProgressBar from 'react-bootstrap/ProgressBar';
 
 const skills = [
-  { name: "React", icon: faReact },
-  { name: "Python", icon: faPython },
-  { name: "JavaScript", icon: faJs },
-  { name: "C", icon: faCuttlefish },
-  { name: "C++", icon: faCuttlefish },
-  { name: "Rust", icon: faRust },
-  { name: "Node.js", icon: faNodeJs },
+  { name: "React", icon: faReact, progress: 65 },
+  { name: "Python", icon: faPython, progress: 95 },
+  { name: "JavaScript", icon: faJs, progress: 70 },
+  { name: "C", icon: faCuttlefish, progress: 75 },
+  { name: "C++", icon: faCuttlefish, progress: 70},
+  { name: "Rust", icon: faRust, progress: 60 },
+  { name: "Node.js", icon: faNodeJs, progress: 70 },
 ];
 
 
@@ -36,6 +36,7 @@ function Skills() {
                     style={{ marginBottom: '10px', color: '#007acc' }}
                   />
                  <h5 className="card-title">{item.name}</h5>
+                 <ProgressBar now={item.progress} label={`${item.progress}%`} />
                 </div>
               </div>
             </motion.div>

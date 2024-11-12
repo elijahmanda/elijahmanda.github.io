@@ -7,7 +7,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import { motion, useMotionTemplate, useMotionValue, animate } from 'framer-motion';
-import { Stars } from '@react-three/drei';
+import { Stars, SpotLight, useDepthBuffer } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 
 const COLORS = ["#13FFAA", "#1E67C6", "#CEB4CF", "#00335C"];
@@ -41,7 +41,7 @@ function App() {
       </div>
       <div className="absolute inset-0 z-0">
       <Canvas>
-          <Stars radius={50} count={2500} factor={8} fade speed={2} />
+          <Stars radius={30} depth={5} count={3000} factor={4} saturation={0} fade speed={3} />
       </Canvas>
       </div>
     </motion.div>
