@@ -10,13 +10,13 @@ const Footer = () => {
         <a href="https://github.com/elijahmanda" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <FaGithub size={24} className="hover:text-gray-400" />
         </a>
-        <a href="https://linkedin.com/in/elijahmanda" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <FaLinkedin size={24} className="hover:text-gray-400" />
         </a>
         <a href="https://twitter.com/elijahmandajc" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
           <FaTwitter size={24} className="hover:text-gray-400" />
         </a>
-        <a href="https://instagram.com/elijahmanda" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <a href="https://instagram.com/elijahmanda.jc" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <FaInstagram size={24} className="hover:text-gray-400" />
         </a>
       </div>
