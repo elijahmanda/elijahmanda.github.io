@@ -25,13 +25,13 @@ function App() {
   }, []);
   
   return (
-    <motion.div
-      className="relative grid min-h-screen place-content-center overflow-hidden bg-gray-950 text-gray-200"
+    <div
+      className="relative min-h-screen overflow-hidden bg-gray-950 text-gray-200"
       style={{
           backgroundImage,
       }}
     >
-      <div className="relative z-10 flex flex-col items-center">
+      <div className="relative z-10">
         <NavBar />
         <Home color={color}/>
         <About />
@@ -44,7 +44,7 @@ function App() {
           <Stars radius={30} depth={5} count={3000} factor={4} saturation={0} fade speed={3} />
       </Canvas>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

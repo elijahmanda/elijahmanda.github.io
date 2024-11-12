@@ -17,8 +17,13 @@ const skills = [
 
 function Skills() {
     return (
-      <section id="skills" className="d-flex justify-content-center align-items-center text-center">
-      <div className="container mb-4">
+      <section
+        id="skills"
+        className="d-flex justify-content-center align-items-center text-center bg-dark"
+      >
+      <div
+        className="container mb-4"
+      >
       <h2 className="mb-4 display-4">Skills</h2>
       <div className="row">
         { skills.map((item) => (

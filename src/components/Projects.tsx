@@ -17,7 +17,7 @@ const getProjects = () => {
 function Projects() {
   const projects = getProjects();
   return (
-    <section id="projects" className="d-flex justify-content-center align-items-center text-center text-white">
+    <section id="projects" className="d-flex justify-content-center align-items-center text-center bg-dark">
       <div className="container mb-4">
       <h2 className="mb-4 display-4">Projects</h2>
       <div className="row">
