@@ -7,7 +7,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import { motion, useMotionTemplate, useMotionValue, animate } from 'framer-motion';
-import { Stars, SpotLight, useDepthBuffer } from '@react-three/drei';
+import { Stars } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 
 const COLORS = ["#13FFAA", "#1E67C6", "#CEB4CF", "#00335C"];
