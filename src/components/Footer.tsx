@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer id="footer" className="w-full py-4 bg-gray-800 text-white flex flex-col items-center">
       <div className="mb-4 text-center">
-        <p>© 2024 My Portfolio</p>
+        <p>© 2024 Elijah Manda @ JCEM Technologies</p>
       </div>
       <div className="flex space-x-4">
         <a href="https://github.com/elijahmanda" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
