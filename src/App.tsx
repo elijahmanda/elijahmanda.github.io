@@ -23,12 +23,12 @@ function App() {
           repeat: Infinity
       })
   }, []);
-  
+
   return (
     <div
       className="relative min-h-screen overflow-hidden bg-gray-950 text-gray-200"
       style={{
-          backgroundImage,
+          backgroundImage: backgroundImage.get(),
       }}
     >
       <div className="relative z-10">
